@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="welcome">
         <div class="welcome-container-top">
@@ -43,6 +40,38 @@
           <h1 class="welcome-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
       </header>
+
+      <div class="modal _hidden">
+        <div class="modal-overlay"></div>
+        <form class="modal-content">
+          <div class="modal-close-times"></div>
+          <div class="modal-title">Ваш фидбек</div>
+          <div class="modal-visit-periodicity">
+            <label class="modal-visit-group">
+              <div class="modal-theme-question">Как часто вы заходите на сайт?</div>
+              <select class="visit-select">
+                <option value="everyday" selected>Почти каждый день</option>
+                <option value="severaldays">Раз в 2-3 дня</option>
+                <option value="week">Раз в неделю</option>
+              </select>
+            </label>
+          </div>
+          <div class="modal-email-mailing">
+            <div class="modal-theme-question">Вы подписаны на e-mail рассылку?</div>
+            <div class="modal-radio-buttons">
+                <input type="radio" class="modal-radio-button modal-radio-buttonYes" id="choiceYes" name="radio-button" value="yes">
+                <label class="modal-radio-button-label modal-radio-button-labelYes" for="choiceYes"><span class="modal-label-choice">Да</span></label>
+                <input type="radio" class="modal-radio-button modal-radio-buttonNo" id="choiceNo" name="radio-button" value="no">
+                <label class="modal-radio-button-label modal-radio-button-labelNo" for="choiceNo"><span class="modal-label-choice">Нет</span></label>
+            </div>
+          </div>
+          <div class="modal-content-recomendation">
+            <div class="modal-theme-question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
+            <textarea class="modal-textarea" rows="10" cols="45" name="text">Может, больше рецептов?</textarea>
+          </div>
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
+    </div>
 
       <section class="trends-section">
         <h3 class="section-title">Сейчас в тренде</h3>
@@ -463,6 +492,7 @@
             <li class="social-networks-list-item">
               <a class="social-network-link tumblr" href="#tumblr"><span class="visually-hidden">tumblr</span></a>
             </li>
+          </ul>
         </address>
         <div class="copyright"><a class="copyright-link" href="#copiright">Copyright © 2009–2019 City Blog LLC.</a></div>
       </footer>

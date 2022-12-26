@@ -1,6 +1,26 @@
+@font-face {
+    font-family: "OpenSans-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("OpenSans"),
+        url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+         url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+         url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    font-style: bold;
+    font-weight: 700;
+    src: local("OpenSans"),
+        url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+         url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+         url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
 body {
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans-Regular', sans-serif;
 }
 
 .welcome {
@@ -28,7 +48,7 @@ body {
     margin: 0;
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
+    font-family: 'OpenSans-Bold';
     color: #ffffff;
 }
 
@@ -52,7 +72,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    z-index: 0;
+    z-index: -2;
 }
 
 .trend:after {
@@ -64,13 +84,13 @@ body {
     right: 0;
     background-color: #000000;
     opacity: 0.60;
-    z-index: -1;
+    z-index: -3;
 }
 
 .section-title {
+    font-family: 'OpenSans-Bold';
     text-transform: uppercase;
     text-align: center;
-    font-weight: 700;
     color: #0f0d0e;
 }
 
@@ -101,9 +121,9 @@ body {
 }
 
 .trend-link {
+    font-family: 'OpenSans-Bold';
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
     color: #ffffff;
 }
 
@@ -111,7 +131,6 @@ body {
     text-transform: uppercase;
     padding-left: 0;
     font-size: 14px;
-    font-weight: 700;
     line-height: 36px;
     display: flex;
     margin: 0;
@@ -132,7 +151,6 @@ body {
 .post-tag {
     text-transform: uppercase;
     padding-left: 0;
-    font-weight: 700;
     display: flex;
     margin: 0;
 }
@@ -142,6 +160,7 @@ body {
 }
 
 .tag {
+    font-family: 'OpenSans-Bold';
     margin-right: 18px;
     text-decoration: none;
     color: #b59f5b;
@@ -149,11 +168,11 @@ body {
 
 .post-link {
     text-decoration: none;
+    font-family: 'OpenSans-Bold';
 }
 
 .post-name {
     text-transform: uppercase;
-    font-weight: 700;
     color: #0f0d0e;
 }
 
@@ -164,18 +183,16 @@ body {
 .post-date {
     margin-right: 12px;
     font-size: 12px;
-    font-weight: 400;
     color: #888888;
 }
 
 .post-author {
+    font-family: 'OpenSans-Bold';
     font-size: 12px;
-    font-weight: 700;
 }
 
 .post-description {
     color: #0f0d0e;
-    font-weight: 400;
 }
 
 .aside-info {
@@ -183,9 +200,9 @@ body {
 }
 
 .aside-title {
+    font-family: 'OpenSans-Bold';
     text-transform: uppercase;
     text-align: center;
-    font-weight: 700;
     color: #0f0d0e;
     margin: 0 auto;
 }
@@ -213,7 +230,6 @@ body {
 
 .new-post-date {
     font-size: 12px;
-    font-weight: 400;
     line-height: 12px;
     color: #888888;
 
@@ -222,16 +238,17 @@ body {
 }
 
 .new-post-name {
+    font-family: 'OpenSans-Bold';
     text-transform: uppercase;
     display: block;
     text-decoration: none;
     font-size: 14px;
-    font-weight: bold;
     color: #000000;
     display: block;
 }
 
 .new-post-title {
+    font-family: 'OpenSans-Bold';
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -273,7 +290,7 @@ body {
     height: 48px;
 
     background-color: #b59f5b;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-image: url("../images/search.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px 18px;
@@ -299,9 +316,9 @@ body {
 .subscribe-button {
     height: 48px;
 
+    font-family: 'OpenSans-Bold';
     font-size: 14px;
     line-height: 40px;
-    font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
 
@@ -329,9 +346,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 
+    font-family: 'OpenSans-Bold';
     font-size: 12px;
     line-height: 12px;
-    font-weight: 700;
     color: #0f0d0e;
 
     display: inline-block;
@@ -353,16 +370,16 @@ body {
 }
 
 .theme-link {
+    font-family: 'OpenSans-Bold';
     text-decoration: none;
     font-size: 14px;
-    font-weight: 700;
     line-height: 46px;
     color: #000000;
 }
 
 .numbers-posts-on-theme {
+    font-family: 'OpenSans-Bold';
     font-size: 12px;
-    font-weight: bolder;
     color: #b59f5b;
 }
 
@@ -383,9 +400,9 @@ body {
 }
 
 .shop-item-name {
+    font-family: 'OpenSans-Bold';
     text-transform: uppercase;
     color: #0f0d0e;
-    font-weight: 700;
 }
 
 .shop-item-name-link {
@@ -397,7 +414,6 @@ body {
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
-    font-weight: 400;
 }
 
 .shop-item-link {
@@ -405,7 +421,6 @@ body {
     font-size: 15px;
     line-height: 22px;
     color: #b59f5b;
-    font-weight: 400;
 }
 
 .shop-item-footer {
@@ -417,11 +432,11 @@ body {
 }
 
 .shop-item-price {
+    font-family: 'OpenSans-Bold';
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
     color: #0f0d0e;
-    font-weight: 700;
 }
 
 .shop-item-price-old {
@@ -430,16 +445,15 @@ body {
     text-decoration: line-through; 
     text-transform: uppercase;
     color: #0f0d0e;
-    font-weight: 700;
 }
 
 .shop-item-button {
     width: 140px;
     height: 48px;
 
+    font-family: 'OpenSans-Bold';
     font-size: 14px;
     line-height: 40px;
-    font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
 
@@ -495,11 +509,179 @@ body {
 }
 
 .copyright-link {
+    font-family: 'OpenSans-Bold';
     font-size: 12px;
-    font-weight: 700;
     color: #999999;
     text-decoration: none;
 }
+
+.modal {
+    position: fixed;
+    width:100%;
+    min-height:100%;
+    top: 0;
+}
+
+._hidden {
+    display: none;
+}
+
+.modal-close-times {
+    position: absolute;
+
+    background-image: url("../svg/form-x.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.modal-title {
+    font-family: 'OpenSans-Bold';
+    text-transform: uppercase;
+    text-align: center;
+    color: #0f0d0e;
+}
+
+.modal-title:after {
+    content: '';
+    display: block;
+    width: 66px;
+    height: 3px;
+    background: #b59f5b;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+.modal-content {
+    background-position: center;
+    position: fixed;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.modal-theme-question {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.modal-radio-buttons {
+    display: inline-flex;
+}
+
+.modal-radio-button-label {
+    font-size: 13px;
+    display: inline-block;
+    margin: 2px 33px 8px 29px;
+    cursor: pointer;
+}
+
+.modal-label-choice {
+    margin-left: 2px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.modal-radio-button-label::before {
+    margin-left: -30px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.modal-radio-buttonYes:checked ~ .modal-radio-button-labelYes::before {
+    background-image: url("../svg/form-circle.svg");
+}
+  
+.modal-radio-buttonNo:checked ~ .modal-radio-button-labelNo::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+input.modal-radio-button {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+  }
+
+.modal-overlay {
+    background-color: #000000;
+    opacity: 0.60;
+    z-index: 1;
+    position: fixed;
+    width:100%;
+    min-height:100%;
+}
+
+.visit-select {
+    height: 48px;
+    margin: 0;
+
+    padding-left: 18px;
+    padding-right: 18px;
+
+    font-family: inherit;
+    font-size: 13px;
+    color: #888888;
+    background-color: #f4f7f6;
+    border: none;
+    
+    -webkit-appearance: none;
+    -moz-appeareance: none;
+
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px;
+}
+
+.visit-select:focus {
+    outline: none;
+}
+
+.modal-content-recomendation {
+    margin-bottom: 22px;
+}
+
+.modal-textarea {
+    height: 96px;
+    
+    -webkit-appearance: none;
+    -moz-appeareance: none;
+
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 16px;
+    color: #888888;
+    background-color: #f4f7f6;
+
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 18px 18px 18px 18px;
+}
+
+.modal-button {
+    font-family: 'OpenSans-Bold';
+    height: 48px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #b59f5b;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
 
 @media (max-width: 640px) {
     .welcome {
@@ -726,6 +908,59 @@ body {
         min-width: 330px;
         width: 91.67vw;
         margin: 40px auto 41px auto;
+    }
+
+    .modal-content {
+        top: 56px;
+        left: calc(50vw - 165px);
+        height: 546px;
+        width: 280px;
+        padding: 0px 25px 0px 25px;
+    }
+
+    .modal-title {
+        font-size: 16px;
+        line-height: 28px;
+        margin: 20px auto 26px auto;
+    }
+
+    .modal-close-times {
+        right: -25px;
+        top: -59px;
+     
+        width: 78px;
+        height: 78px;
+        background-size: 28px 28px;
+    }
+
+    .modal-theme-question {
+        margin-bottom: 9px;
+    }
+
+    .modal-visit-periodicity {
+        margin-bottom: 30px;
+    }
+
+    .visit-select {
+        width: 280px;
+    }
+
+    .modal-radio-button-label::before {
+        width: 26px;
+        height: 26px;
+        background-size: 26px;
+    }
+
+    .modal-email-mailing {
+        margin-bottom: 25px;
+    }
+
+    .modal-textarea {
+        width: 244px;
+    }
+
+    .modal-button {
+        width: 280px;
     }
 
 }
@@ -978,6 +1213,59 @@ body {
         margin-right: calc(50% - 350px);
     }
 
+    .modal-content {
+        top: 235px;
+        left: calc(50vw - 195px);
+        height: 598px;
+        width: 330px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .modal-title {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 46px auto 26px auto;
+    }
+
+    .modal-close-times {
+        right: -25px;
+        top: -62px;
+     
+        width: 78px;
+        height: 78px;
+        background-size: 28px 28px;
+    }
+
+    .modal-theme-question {
+        margin-bottom: 9px;
+    }
+
+    .modal-visit-periodicity {
+        margin-bottom: 30px;
+    }
+
+    .visit-select {
+        width: 330px;
+    }
+
+    .modal-radio-button-label::before {
+        width: 26px;
+        height: 26px;
+        background-size: 26px;
+    }
+
+    .modal-email-mailing {
+        margin-bottom: 25px;
+    }
+
+    .modal-textarea {
+        width: 294px;
+    }
+
+    .modal-button {
+        width: 330px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -1215,4 +1503,71 @@ body {
         margin-left: calc(50% - 585px);
         margin-right: calc(50% - 585px);
     }
+
+    .modal-content {
+        top: 243px;
+        left: calc(50vw - 195px);
+        height: 588px;
+        width: 330px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .modal-close-times {
+        right: -26px;
+        top: -50px;
+     
+        width: 68px;
+        height: 68px;
+        background-size: 18px 18px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        line-height: 29px;
+        margin: 46px auto 26px auto;
+    }
+
+    .modal-theme-question {
+        margin-bottom: 8px;
+    }
+
+    .modal-visit-periodicity {
+        margin-bottom: 32px;
+    }
+
+    .visit-select {
+        width: 330px;
+    }
+
+    .modal-label-choice {
+        margin-left: -8px;
+        margin-top: 0px;
+        display: inline-block;
+    }
+
+    .modal-radio-button-label {
+        font-size: 13px;
+        display: inline-block;
+        margin: 0px 15px 8px 31px;
+        cursor: pointer;
+    }
+
+    .modal-radio-button-label::before {
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+    }
+
+    .modal-email-mailing {
+        margin-bottom: 20px;
+    }
+
+    .modal-textarea {
+        width: 294px;
+    }
+
+    .modal-button {
+        width: 330px;
+    }
+
 }
